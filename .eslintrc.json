@@ -7,7 +7,9 @@
   "extends": [
     "standard",
     "plugin:react/recommended",
-    "plugin:prettier/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -16,7 +18,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks"],
+  "plugins": ["react", "react-hooks", "jsx-a11y"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-no-useless-fragment": "error",

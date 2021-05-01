@@ -1,5 +1,5 @@
-export const fetchPages = async () => {
-  const response = await fetch(`${process.env.BASE_URL}/`, {
+export const fetchPage = async (id) => {
+  const response = await fetch(`${process.env.BASE_URL}/pages/${id}`, {
     headers: {
       Authentication: `Bearer ${process.env.NOTION_API_TOKEN}`,
     },

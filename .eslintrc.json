@@ -1,16 +1,5 @@
 {
-  // "parser": "babel-eslint",
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "standard",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:prettier/recommended",
-    "plugin:jsx-a11y/recommended"
-  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -18,8 +7,27 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "jsx-a11y"],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "standard",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "jsx-a11y"],
   "rules": {
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "error",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "camelcase": "off",
+
     "react/react-in-jsx-scope": "off",
     "react/jsx-no-useless-fragment": "error",
 
@@ -49,12 +57,12 @@
             "position": "before"
           },
           {
-            "pattern": "gatsby*",
+            "pattern": "next*",
             "group": "external",
             "position": "before"
           }
         ],
-        "pathGroupsExcludedImportTypes": ["react*", "redux*", "gatsby*"],
+        "pathGroupsExcludedImportTypes": ["react*", "redux*", "next*"],
         "newlines-between": "always",
         "alphabetize": {
           "order": "asc",

@@ -8,8 +8,8 @@
     "build": "next build",
     "develop": "next",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./",
+    "type-check": "tsc --pretty --noEmit",
     "prepare": "husky install"
   },
   "repository": {
@@ -36,6 +36,8 @@
   "devDependencies": {
     "@types/node": "^15.12.1",
     "@types/react": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
     "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
@@ -52,7 +54,7 @@
     "typescript": "^4.3.2"
   },
   "lint-staged": {
-    "*.js": "eslint"
+    "*.{js,jsx,ts,tsx}": "eslint"
   },
   "volta": {
     "node": "14.17.0"

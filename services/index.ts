@@ -1,4 +1,4 @@
-import { fetchDatabase, fetchDatabases } from "./database";
-import { fetchPage } from "./pages";
+import { fetchDatabase, fetchDatabases } from "./database"
+import { fetchPage } from "./pages"
 
-export { fetchDatabase, fetchDatabases, fetchPage };
+export { fetchDatabase, fetchDatabases, fetchPage }

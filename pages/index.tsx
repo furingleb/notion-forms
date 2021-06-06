@@ -1,8 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
+import { GetServerSideProps } from "next";
 
-import { fetchPages } from "../services/pages";
+import { fetchDatabases } from "../services";
 
-const HomePage = () => {
+const HomePage: FC = () => {
   // const [isLoading, setIsLoading] = React.useState(false);
   // const [notes, setNotes] = React.useState("");
 
@@ -15,8 +16,8 @@ const HomePage = () => {
 
 export default HomePage;
 
-export async function getServerSideProps(context) {
-  const data = await fetchPages();
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const data = await fetchDatabases();
 
   if (!data) {
     return {
@@ -27,6 +28,6 @@ export async function getServerSideProps(context) {
   return {
     props: {
       pages: data,
-    }, // will be passed to the page component as props
+    },
   };
-}
+};

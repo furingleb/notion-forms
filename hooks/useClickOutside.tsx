@@ -5,7 +5,7 @@ const useClickOutside = (): [any, boolean] => {
   const [clickedOutside, setClickedOutside] = useState(false)
 
   const handleClickOutside = (e: PointerEvent | MouseEvent | TouchEvent) => {
-    if (ref && ref.current && typeof ref.current === "object") {
+    if (ref && ref.current) {
       if (ref.current.contains(e.target)) {
         setClickedOutside(false)
       } else {

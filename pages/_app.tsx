@@ -1,15 +1,10 @@
 import type { AppProps } from "next/app"
-import PropTypes from "prop-types"
 
 import "../scss/main.scss"
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp: React.FC<AppProps> = (props) => {
+  const { Component, pageProps } = props
   return <Component {...pageProps} />
-}
-
-MyApp.propTypes = {
-  Component: PropTypes.node.isRequired,
-  pageProps: PropTypes.object.isRequired,
 }
 
 export default MyApp

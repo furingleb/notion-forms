@@ -4,7 +4,9 @@
     "dsznajder.es7-react-js-snippets",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
-    "jock.svg",
-    "stylelint.vscode-stylelint"
+    "mattpocock.ts-error-translator",
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+    "jock.svg"
   ]
 }

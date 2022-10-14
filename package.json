@@ -60,6 +60,6 @@
     "*.{js,jsx,ts,tsx}": "eslint"
   },
   "volta": {
-    "node": "14.18.0"
+    "node": "16.18.0"
   }
 }

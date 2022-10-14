@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app"
 
-import "../scss/main.scss"
+import "../index.css"
 
 const MyApp: React.FC<AppProps> = (props) => {
   const { Component, pageProps } = props

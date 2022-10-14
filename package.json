@@ -1,6 +1,6 @@
 {
-  "name": "notion-capture",
-  "description": "A Simple app to quickly capture information to Notion",
+  "name": "notion-forms",
+  "description": "A Simple app to quickly forms information to Notion",
   "version": "1.0.0",
   "author": "Jitendra Nirnejak",
   "scripts": {
@@ -57,15 +57,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nirnejak/notion-capture.git"
+    "url": "git+https://github.com/nirnejak/notion-forms.git"
   },
   "keywords": [
     "Notion",
-    "Capture"
+    "Forms"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nirnejak/notion-capture/issues"
+    "url": "https://github.com/nirnejak/notion-forms/issues"
   },
-  "homepage": "https://github.com/nirnejak/notion-capture#readme",
+  "homepage": "https://github.com/nirnejak/notion-forms#readme"
 }

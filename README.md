@@ -1,3 +1,3 @@
-# Notion Capture
+# Notion Forms
 
-A Simple app to capture Notes to Notion.
+An app to create and manage forms and collect the submissions in Notion

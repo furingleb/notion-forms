@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
 
   return (
     <section>
-      <p>Welcome to Notion Capture</p>
+      <p>Welcome to Notion Forms</p>
     </section>
   )
 }
